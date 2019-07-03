@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#SBATCH -t 0-05:00:00
+##SBATCH -p short    # request partition 'short'
+
+#SBATCH -n XXX
+##SBATCH -N 2 --ntasks-per-node=12
+
+
+#SBATCH --job-name="1e6_YYY_XXX"
+
+
+# mail alert at start, end and abortion of execution
+#SBATCH --mail-type=ALL
+##SBATCH --mail-user=p.b.delandmeter@uu.nl
+#SBATCH --constraint=haswell ## Runs only on Haswell nodes
+
+cd /home/philippe/parcels_efficiency/stommel/mpi/multi_nodes/production
+
+echo "JOB #YYY on XXX procs"
+
+#source activate py3_parcels_mpi
+
+srun python stommel_mpi_long_1e6.py -j YYY
+
+echo 'job completed'
