@@ -1,0 +1,60 @@
+======== JIT (Just-in-Time) experiments ========
+ ---- dynamically adding particles (adaptive release rate) ---- 
+ ---- dynamically adding and removing particles ---- 
+N: 1024
+final # particles: 560
+Time of pset.execute(): 137.231911039 sec.
+Avg. kernel update time: 188.24396122054796 msec.
+N: 2048
+final # particles: 1156
+Time of pset.execute(): 162.121323704 sec.
+Avg. kernel update time: 222.56742216164383 msec.
+N: 4096
+final # particles: 2365
+Time of pset.execute(): 451.65382892499997 sec.
+Avg. kernel update time: 619.7563787041097 msec.
+N: 8192
+final # particles: 4783
+Time of pset.execute(): 191.967564375 sec.
+Avg. kernel update time: 264.92058894931506 msec.
+N: 16384
+final # particles: 9529
+Time of pset.execute(): 306.09034277800004 sec.
+Avg. kernel update time: 423.2878476808219 msec.
+N: 32768
+final # particles: 18947
+Time of pset.execute(): 842.425141931 sec.
+Avg. kernel update time: 1164.134663119178 msec.
+N: 65536
+final # particles: 38158
+Time of pset.execute(): 2214.798543853 sec.
+Avg. kernel update time: 3050.319187890411 msec.
+==================================================================
+============== JIT (Just-in-Time) experiments - MPI ==============
+==================================================================
+ ---- dynamically adding and removing particles ---- 
+N: 1024
+final # particles: 547
+Time of pset.execute(): 155.21383552 sec.
+Avg. kernel update time: 212.9180436479452 msec.
+N: 2048
+final # particles: 1181
+Time of pset.execute(): 173.37190054599998 sec.
+Avg. kernel update time: 237.84679558082192 msec.
+N: 4096
+final # particles: 2375
+Time of pset.execute(): 354.076240604 sec.
+Avg. kernel update time: 485.94600570684923 msec.
+N: 8192
+final # particles: 4801
+Time of pset.execute(): 209.800081339 sec.
+Avg. kernel update time: 288.82491369041094 msec.
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 16384
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
