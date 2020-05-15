@@ -1,0 +1,285 @@
+======== JIT (Just-in-Time) experiments ========
+ ---- constant particle number ---- 
+N: 1024
+final # particles: 1024
+Time of pset.execute(): 109.67393112182617 sec.
+Avg. kernel update time: 150.4092575752572 msec.
+N: 2048
+final # particles: 2048
+Time of pset.execute(): 132.03987884521484 sec.
+Avg. kernel update time: 181.27744818386964 msec.
+N: 4096
+final # particles: 4096
+Time of pset.execute(): 160.74156498908997 sec.
+Avg. kernel update time: 221.05154795189426 msec.
+N: 8192
+final # particles: 8192
+Time of pset.execute(): 209.36604809761047 sec.
+Avg. kernel update time: 288.69248906227006 msec.
+N: 16384
+final # particles: 16384
+Time of pset.execute(): 312.42555022239685 sec.
+Avg. kernel update time: 431.99857391723214 msec.
+N: 32768
+final # particles: 32768
+Time of pset.execute(): 516.3582501411438 sec.
+Avg. kernel update time: 715.2481314254134 msec.
+N: 65536
+final # particles: 65536
+Time of pset.execute(): 950.1746790409088 sec.
+Avg. kernel update time: 1317.5453574690102 msec.
+N: 131072
+final # particles: 131072
+Time of pset.execute(): 1892.1262729167938 sec.
+Avg. kernel update time: 2625.07415209731 msec.
+ ---- dynamically removing particles (aging with t_max=14 days) ---- 
+N: 1024 ( 1254 )
+final # particles: 221
+Time of pset.execute(): 111.79838490486145 sec.
+Avg. kernel update time: 153.56782593139232 msec.
+N: 2048 ( 2508 )
+final # particles: 451
+Time of pset.execute(): 127.91392397880554 sec.
+Avg. kernel update time: 176.09791625035953 msec.
+N: 4096 ( 5016 )
+final # particles: 917
+Time of pset.execute(): 151.38007807731628 sec.
+Avg. kernel update time: 209.28854648381062 msec.
+N: 8192 ( 10033 )
+final # particles: 1743
+Time of pset.execute(): 191.88467812538147 sec.
+Avg. kernel update time: 266.7003220074797 msec.
+N: 16384 ( 20066 )
+final # particles: 3699
+Time of pset.execute(): 277.4590928554535 sec.
+Avg. kernel update time: 387.86133413445464 msec.
+N: 32768 ( 40132 )
+final # particles: 7295
+Time of pset.execute(): 440.2417640686035 sec.
+Avg. kernel update time: 619.1664463853183 msec.
+N: 65536 ( 80264 )
+final # particles: 14753
+Time of pset.execute(): 780.7260940074921 sec.
+Avg. kernel update time: 1101.3411290025058 msec.
+N: 131072 ( 160529 )
+final # particles: 29586
+Time of pset.execute(): 1508.8957979679108 sec.
+Avg. kernel update time: 2132.2599260774377 msec.
+ ---- dynamically adding particles (adaptive release rate) ---- 
+N: 1024
+final # particles: 1152
+Time of pset.execute(): 158.03185296058655 sec.
+Avg. kernel update time: 216.57023691151238 msec.
+N: 2048
+final # particles: 2304
+Time of pset.execute(): 181.15030598640442 sec.
+Avg. kernel update time: 248.353286312051 msec.
+N: 4096
+final # particles: 4608
+Time of pset.execute(): 545.323343038559 sec.
+Avg. kernel update time: 747.4504056042189 msec.
+N: 8192
+final # particles: 9216
+Time of pset.execute(): 209.67325091362 sec.
+Avg. kernel update time: 288.18822886845834 msec.
+N: 16384
+final # particles: 18304
+Time of pset.execute(): 315.0281789302826 sec.
+Avg. kernel update time: 433.4421820836524 msec.
+N: 32768
+final # particles: 36480
+Time of pset.execute(): 908.9932961463928 sec.
+Avg. kernel update time: 1249.0917150288412 msec.
+N: 65536
+final # particles: 72960
+Time of pset.execute(): 2678.5275700092316 sec.
+Avg. kernel update time: 3677.4496369165918 msec.
+N: 131072
+final # particles: 145920
+Time of pset.execute(): 9330.723518133163 sec.
+Avg. kernel update time: 12798.41132327302 msec.
+ ---- dynamically adding and removing particles ---- 
+N: 1024
+final # particles: 544
+Time of pset.execute(): 132.13563513755798 sec.
+Avg. kernel update time: 181.20679985987 msec.
+N: 2048
+final # particles: 1143
+Time of pset.execute(): 155.30606603622437 sec.
+Avg. kernel update time: 213.1190450224158 msec.
+N: 4096
+final # particles: 2362
+Time of pset.execute(): 392.6487262248993 sec.
+Avg. kernel update time: 538.6341836354503 msec.
+N: 8192
+final # particles: 4817
+Time of pset.execute(): 187.61726903915405 sec.
+Avg. kernel update time: 258.6389616744159 msec.
+N: 16384
+final # particles: 9516
+Time of pset.execute(): 271.3559808731079 sec.
+Avg. kernel update time: 374.8190014329675 msec.
+N: 32768
+final # particles: 18988
+Time of pset.execute(): 703.084981918335 sec.
+Avg. kernel update time: 969.5385642247657 msec.
+N: 65536
+final # particles: 37820
+Time of pset.execute(): 1906.6584429740906 sec.
+Avg. kernel update time: 2625.3665659525623 msec.
+N: 131072
+final # particles: 76033
+Time of pset.execute(): 6646.494941949844 sec.
+Avg. kernel update time: 9131.366271188814 msec.
+==================================================================
+============== JIT (Just-in-Time) experiments - MPI ==============
+==================================================================
+ ---- constant particle number ---- 
+N: 1024
+final # particles: 1024
+Time of pset.execute(): 130.93358397483826 sec.
+Avg. kernel update time: 179.53439314071446 msec.
+N: 2048
+final # particles: 2048
+Time of pset.execute(): 156.52191710472107 sec.
+Avg. kernel update time: 214.62722183906868 msec.
+N: 4096
+final # particles: 4096
+Time of pset.execute(): 180.2966959476471 sec.
+Avg. kernel update time: 247.4349753497398 msec.
+N: 8192
+final # particles: 8192
+Time of pset.execute(): 218.24969696998596 sec.
+Avg. kernel update time: 300.01068343854934 msec.
+N: 16384
+final # particles: 16384
+Time of pset.execute(): 278.2822620868683 sec.
+Avg. kernel update time: 385.47945316523726 msec.
+N: 32768
+final # particles: 32768
+Time of pset.execute(): 377.9118208885193 sec.
+Avg. kernel update time: 523.2052887955757 msec.
+N: 65536
+final # particles: 65536
+Time of pset.execute(): 631.0292270183563 sec.
+Avg. kernel update time: 875.572306815892 msec.
+N: 131072
+final # particles: 131072
+Time of pset.execute(): 1162.4401140213013 sec.
+Avg. kernel update time: 1614.9874791707077 msec.
+ ---- dynamically removing particles (aging with t_max=14 days) ---- 
+N: 1024 ( 1254 )
+final # particles: 245
+Time of pset.execute(): 133.80495500564575 sec.
+Avg. kernel update time: 183.6981192027053 msec.
+N: 2048 ( 2508 )
+final # particles: 465
+Time of pset.execute(): 150.52334904670715 sec.
+Avg. kernel update time: 206.6681985985743 msec.
+N: 4096 ( 5016 )
+final # particles: 939
+Time of pset.execute(): 176.88975977897644 sec.
+Avg. kernel update time: 243.35925056509774 msec.
+N: 8192 ( 10033 )
+final # particles: 1863
+Time of pset.execute(): 206.85944890975952 sec.
+Avg. kernel update time: 285.39996310456155 msec.
+N: 16384 ( 20066 )
+final # particles: 3634
+Time of pset.execute(): 249.30353307724 sec.
+Avg. kernel update time: 346.3025654831978 msec.
+N: 32768 ( 40132 )
+final # particles: 7444
+Time of pset.execute(): 334.6477770805359 sec.
+Avg. kernel update time: 469.2563602369126 msec.
+N: 65536 ( 80264 )
+final # particles: 14733
+Time of pset.execute(): 514.0824670791626 sec.
+Avg. kernel update time: 726.4939151398123 msec.
+N: 131072 ( 160529 )
+final # particles: 29347
+Time of pset.execute(): 935.761176109314 sec.
+Avg. kernel update time: 1325.5047644654364 msec.
+ ---- dynamically adding particles (adaptive release rate) ---- 
+N: 1024
+final # particles: 1152
+Time of pset.execute(): 166.7747540473938 sec.
+Avg. kernel update time: 228.56584411777862 msec.
+N: 2048
+final # particles: 2304
+Time of pset.execute(): 179.23557496070862 sec.
+Avg. kernel update time: 245.70387128281268 msec.
+N: 4096
+final # particles: 4608
+Time of pset.execute(): 401.21086716651917 sec.
+Avg. kernel update time: 549.934336910509 msec.
+N: 8192
+final # particles: 9216
+Time of pset.execute(): 218.08020615577698 sec.
+Avg. kernel update time: 299.3840629107332 msec.
+N: 16384
+final # particles: 18304
+Time of pset.execute(): 281.61519718170166 sec.
+Avg. kernel update time: 387.2728122423773 msec.
+N: 32768
+final # particles: 36480
+Time of pset.execute(): 633.3609020709991 sec.
+Avg. kernel update time: 870.5212560418533 msec.
+N: 65536
+final # particles: 72960
+Time of pset.execute(): 1731.7033970355988 sec.
+Avg. kernel update time: 2377.8383535881567 msec.
+N: 131072
+final # particles: 145920
+Time of pset.execute(): 5952.851714134216 sec.
+Avg. kernel update time: 8165.538658834484 msec.
+ ---- dynamically adding and removing particles ---- 
+N: 1024
+final # particles: 554
+Time of pset.execute(): 150.14266085624695 sec.
+Avg. kernel update time: 205.87440680151118 msec.
+N: 2048
+final # particles: 1181
+Time of pset.execute(): 168.47144603729248 sec.
+Avg. kernel update time: 230.9730506923101 msec.
+N: 4096
+final # particles: 2355
+Time of pset.execute(): 312.4790370464325 sec.
+Avg. kernel update time: 428.6943631629421 msec.
+N: 8192
+final # particles: 4773
+Time of pset.execute(): 204.31430387496948 sec.
+Avg. kernel update time: 280.9135616642155 msec.
+N: 16384
+final # particles: 9494
+Time of pset.execute(): 259.76042914390564 sec.
+Avg. kernel update time: 357.68796842392175 msec.
+N: 32768
+final # particles: 18848
+Time of pset.execute(): 500.10333704948425 sec.
+Avg. kernel update time: 689.664316503969 msec.
+N: 65536
+final # particles: 38049
+Time of pset.execute(): 1275.7339141368866 sec.
+Avg. kernel update time: 1756.2375604289853 msec.
+N: 131072
+final # particles: 76012
+Time of pset.execute(): 4235.912577867508 sec.
+Avg. kernel update time: 5819.91906721298 msec.
+==================================================================
+============== SciPy experiments (ONLY ON GEMINI) ===============
+==================================================================
+ ---- constant particle number ---- 
+N: 1024
+final # particles: 1024
+Time of pset.execute(): 5967.783595085144 sec.
+Avg. kernel update time: 8175.040127479868 msec.
+ ---- dynamically removing particles (aging with t_max=14 days) ---- 
+N: 1024 ( 1254 )
+final # particles: 251
+Time of pset.execute(): 4944.734215974808 sec.
+Avg. kernel update time: 6773.642172878736 msec.
+ ---- dynamically adding particles (adaptive release rate) ---- 
+N: 1024
+ ---- dynamically adding and removing particles ---- 
+N: 1024

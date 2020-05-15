@@ -1,0 +1,227 @@
+======== JIT (Just-in-Time) experiments ========
+ ---- constant particle number ---- 
+N: 1024
+final # particles: 1024
+Time of pset.execute(): 85.58280110359192 sec.
+Avg. kernel update time: 117.41493564762482 msec.
+N: 2048
+final # particles: 2048
+Time of pset.execute(): 99.23263216018677 sec.
+Avg. kernel update time: 136.34952453717793 msec.
+N: 4096
+final # particles: 4096
+Time of pset.execute(): 115.39264702796936 sec.
+Avg. kernel update time: 158.95437247132602 msec.
+N: 8192
+final # particles: 8192
+Time of pset.execute(): 149.21212196350098 sec.
+Avg. kernel update time: 206.3207508766488 msec.
+N: 16384
+final # particles: 16384
+Time of pset.execute(): 231.22634100914001 sec.
+Avg. kernel update time: 320.7700099030586 msec.
+N: 32768
+final # particles: 32768
+Time of pset.execute(): 391.24365305900574 sec.
+Avg. kernel update time: 544.1157615348085 msec.
+N: 65536
+final # particles: 65536
+Time of pset.execute(): 721.9395730495453 sec.
+Avg. kernel update time: 1005.0103589280011 msec.
+N: 131072
+final # particles: 131072
+Time of pset.execute(): 1378.1890740394592 sec.
+Avg. kernel update time: 1921.1399055507086 msec.
+N: 262144
+final # particles: 262144
+Time of pset.execute(): 2686.8252189159393 sec.
+Avg. kernel update time: 3747.7899851864336 msec.
+ ---- dynamically removing particles (aging with t_max=14 days) ---- 
+N: 1024 ( 1254 )
+final # particles: 0
+Time of pset.execute(): 80.67500710487366 sec.
+Avg. kernel update time: 110.84044796146758 msec.
+N: 2048 ( 2508 )
+final # particles: 0
+Time of pset.execute(): 89.46741199493408 sec.
+Avg. kernel update time: 123.26262193183376 msec.
+N: 4096 ( 5016 )
+final # particles: 0
+Time of pset.execute(): 103.44654989242554 sec.
+Avg. kernel update time: 143.2552876537793 msec.
+N: 8192 ( 10033 )
+final # particles: 0
+Time of pset.execute(): 129.81945395469666 sec.
+Avg. kernel update time: 181.0646658074366 msec.
+N: 16384 ( 20066 )
+final # particles: 0
+Time of pset.execute(): 188.37871503829956 sec.
+Avg. kernel update time: 264.50966449633034 msec.
+N: 32768 ( 40132 )
+final # particles: 0
+Time of pset.execute(): 299.0184769630432 sec.
+Avg. kernel update time: 422.925479444739 msec.
+N: 65536 ( 80264 )
+final # particles: 0
+Time of pset.execute(): 526.3902139663696 sec.
+Avg. kernel update time: 747.4615466104794 msec.
+N: 131072 ( 160529 )
+final # particles: 0
+Time of pset.execute(): 1031.5255250930786 sec.
+Avg. kernel update time: 1468.2947988379492 msec.
+N: 262144 ( 321059 )
+final # particles: 0
+Time of pset.execute(): 1989.3622710704803 sec.
+Avg. kernel update time: 2836.095270065412 msec.
+ ---- dynamically adding particles (adaptive release rate) ---- 
+N: 1024
+final # particles: 1152
+Time of pset.execute(): 132.14372897148132 sec.
+Avg. kernel update time: 181.11955205055133 msec.
+N: 2048
+final # particles: 2304
+Time of pset.execute(): 146.9615831375122 sec.
+Avg. kernel update time: 201.5279998518016 msec.
+N: 4096
+final # particles: 4608
+Time of pset.execute(): 490.48380184173584 sec.
+Avg. kernel update time: 672.347809843821 msec.
+N: 8192
+final # particles: 9216
+Time of pset.execute(): 170.25921392440796 sec.
+Avg. kernel update time: 234.1112110712757 msec.
+N: 16384
+final # particles: 18304
+Time of pset.execute(): 276.5183789730072 sec.
+Avg. kernel update time: 380.69877265250847 msec.
+N: 32768
+final # particles: 36480
+Time of pset.execute(): 903.1164939403534 sec.
+Avg. kernel update time: 1241.2407878327042 msec.
+N: 65536
+final # particles: 72960
+Time of pset.execute(): 2675.888333082199 sec.
+Avg. kernel update time: 3673.5977946895446 msec.
+N: 131072
+final # particles: 145920
+Time of pset.execute(): 9364.402601957321 sec.
+Avg. kernel update time: 12844.2135383005 msec.
+N: 262144
+final # particles: 291712
+Time of pset.execute(): 34418.37066602707 sec.
+Avg. kernel update time: 47181.41475899579 msec.
+ ---- dynamically adding and removing particles ---- 
+N: 1024
+final # particles: 266
+Time of pset.execute(): 97.30626893043518 sec.
+Avg. kernel update time: 133.4388259339006 msec.
+N: 2048
+final # particles: 586
+Time of pset.execute(): 113.47311210632324 sec.
+Avg. kernel update time: 155.74790418964542 msec.
+N: 4096
+final # particles: 1239
+Time of pset.execute(): 285.5093550682068 sec.
+Avg. kernel update time: 391.709915252581 msec.
+N: 8192
+final # particles: 2523
+Time of pset.execute(): 142.41974592208862 sec.
+Avg. kernel update time: 196.31628630912468 msec.
+N: 16384
+final # particles: 4967
+Time of pset.execute(): 213.63089203834534 sec.
+Avg. kernel update time: 295.1510628608808 msec.
+N: 32768
+final # particles: 9948
+Time of pset.execute(): 571.0919799804688 sec.
+Avg. kernel update time: 787.814248098086 msec.
+N: 65536
+final # particles: 19928
+Time of pset.execute(): 1592.3298881053925 sec.
+Avg. kernel update time: 2191.8245165315393 msec.
+N: 131072
+==================================================================
+============== JIT (Just-in-Time) experiments - MPI ==============
+==================================================================
+ ---- constant particle number ---- 
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 1024
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 2048
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 4096
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 8192
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 16384
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+ ---- dynamically removing particles (aging with t_max=14 days) ---- 
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+ ---- dynamically adding particles (adaptive release rate) ---- 
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+N: 1024
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+ ---- dynamically adding and removing particles ---- 
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
+[mpiexec@MEDUSA] Sending Ctrl-C to processes as requested
+[mpiexec@MEDUSA] Press Ctrl-C again to force abort
